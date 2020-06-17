@@ -1,0 +1,75 @@
+div.container {
+  width: 90%;
+  border: 1px solid #ccc;
+}
+
+div.tabs {
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+button.tablink {
+  border: none;
+  outline: none;
+  background-color: unset;
+  padding: 1em 2.5em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s ease;
+  margin-right: -5px;
+  font-family: Arial;
+}
+
+.tabcontent {
+  padding: 0.5em 1.5em;
+  display: none;
+  font-family: Arial;
+}
+
+.show {
+  display: block;
+}
+
+.tablink:hover {
+  background-color: gray;
+}
+
+.tablink.active {
+  background-color: #909294;
+}
+
+div#accordians {
+  margin-top: 2em;
+}
+
+button.accordian {
+  width: 100%;
+  padding: 1em 1.5em;
+  background-color: unset;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  text-align: left;
+  font-family: Arial;
+}
+
+button:hover
+{
+  background-color: #ccc;
+}
+
+button:click
+{
+  transition: 0.5s ease-in;
+}
+button.active
+{
+  background-color: #909294;
+}
+
+.accordian-content
+{
+  font-family: Arial;
+  display: none;
+  padding: 0.5em 1em;
+}
