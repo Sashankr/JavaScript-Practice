@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabs and Accordians</title>
+  <link rel="stylesheet" href="css/TabsAcc.css">
+</head>
+
+<body>
+  <h1>Tabs </h1>
+
+  <div class="container">
+
+    <div class="tabs">
+      <button class="tablink active" onclick="openTab(event,'tab1')">Facebook</button>
+      <button class="tablink" onclick="openTab(event,'tab2')">WhatsApp</button>
+      <button class="tablink" onclick="openTab(event,'tab3')">Instagram</button>
+    </div>
+
+    <div id="tab1" class="tabcontent show">
+      <p>Facebook is an American online social media and social networking service based in Menlo Park, California and a
+        flagship service of the namesake company Facebook, Inc. <br>It was founded by Mark Zuckerberg</p>
+    </div>
+
+    <div id="tab2" class="tabcontent">
+      <p>WhatsApp, is an American freeware, cross-platform messaging and Voice over IP (VoIP) service owned by Facebook,
+        Inc.<br>
+        Founded by Jan Koum and Brian Acton in 2009</p>
+    </div>
+
+    <div id="tab3" class="tabcontent">
+      <p>Instagram (sometimes abbreviated as IG)is an American photo and video-sharing social networking service owned
+        by Facebook, Inc. It was created by Kevin Systrom and Mike Krieger, and launched in October 2010 on iOS.</p>
+    </div>
+
+
+
+  </div>
+
+  <h2>Accordian</h2>
+  <div id="accordians">
+    <div class="container">
+      <button class="accordian">Facebook</button>
+      <div class="accordian-content">
+
+        <p>Facebook is an American online social media and social networking service based in Menlo Park, California and
+          a flagship service of the namesake company Facebook, Inc. <br>It was founded by Mark Zuckerberg</p>
+
+      </div>
+      <button class="accordian">WhatsApp</button>
+      <div class="accordian-content">
+
+        <p>WhatsApp, is an American freeware, cross-platform messaging and Voice over IP (VoIP) service owned by
+          Facebook, Inc.<br>
+          Founded by Jan Koum and Brian Acton in 2009
+        </p>
+
+      </div>
+      <button class="accordian">Instagram</button>
+      <div class="accordian-content">
+        <p>
+          Instagram (sometimes abbreviated as IG)is an American photo and video-sharing social networking service owned
+          by Facebook, Inc. It was created by Kevin Systrom and Mike Krieger, and launched in October 2010 on iOS.
+
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/TabsAcc.js"></script>
+</body>
+
+</html>

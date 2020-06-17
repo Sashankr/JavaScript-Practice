@@ -4,6 +4,7 @@
 <head>
 <meta charset="utf-8">
 <title>Just a Generic Page</title>
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <!-- <h1>Just a generic
@@ -11,13 +12,44 @@ heading</h1> and see if you can think through what each part might do.
 <p>Not a lot to read about here. I'm just an obligatory paragraph living in
 an example in a JavaScript book. I'm looking for something to make my life more
 exciting.</p> -->
+<div id="usereg">
+  <div class="container">
+    <h1 id="form_heading">User SignUp Form</h1>
+    <form onsubmit="validate();" action="success.html" method="post">
+
+      <label for="Username">Username</label>
+      <br>
+      <input type="text" id="username" placeholder="Enter username">
+      <br>
+      <label for="phone">Phone Number</label>
+      <br>
+      <input type="text" id="phone" placeholder="Enter phone number">
+      <br>
+      <label for="pword">Password</label>
+      <br>
+      <input type="password" id="pword" placeholder="Enter password">
+      <br>
+      <label for="cf_pword">Confirm Password</label>
+      <br>
+      <input type="password" id="cf_pword" placeholder="Confirm with same password">
+      <br>
+      <button type="submit" id="btn-submit">Submit</button>
+
+    </form>
+  </div>
+
+</div>
+
 
 <script type="text/javascript" src="js/basics.js">
+
+/*
 setTimeout(wakeUpUser, 5000);
 function wakeUpUser()
 {
   alert("Are you going to stare at this boring page forever?");
 }
+*/
 </script>
 </body>
 </html>
