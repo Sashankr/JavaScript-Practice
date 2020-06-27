@@ -46,7 +46,8 @@ var gloabalBeanCount = beanCount;
 console.log( (localBeanCount) );
 console.log( (beanCount) );
 
-
+/* THINGAMAJIG PROBLEM 
+Will check it later
 function clunk(times) {
   var num = times;
   while (num > 0) {
@@ -76,4 +77,4 @@ function clunk(times) {
   var clunkCounter = 0;
   thingamajig(5);
   console.log(clunkCounter);
-
+*/
