@@ -1,17 +1,15 @@
-
-  var scores =
-[60, 50, 60, 58, 54, 54,
-58, 50, 52, 54, 48, 69,
-34, 55, 51, 52, 44, 51,
-69, 64, 66, 55, 52, 61,
-46, 31, 57, 52, 44, 18,
-41, 53, 55, 61, 51, 44];
+var scores = [60, 50, 60, 58, 54, 54,
+  58, 50, 52, 54, 48, 69,
+  34, 55, 51, 52, 44, 51,
+  69, 64, 66, 55, 52, 61,
+  46, 31, 57, 52, 44, 18,
+  41, 53, 55, 61, 51, 44
+];
 
 var result = document.querySelector("#result");
 var text = "";
-for(var i = 0; i<scores.length; i++)
-{
-  text += "Bubble solution #"+i+" score: "+scores[i]+"<br>";
+for (var i = 0; i < scores.length; i++) {
+  text += "Bubble solution #" + i + " score: " + scores[i] + "<br>";
 }
 result.innerHTML = text;
 
@@ -20,40 +18,54 @@ document.querySelector("#totals").innerHTML = total;
 
 //HighScore
 var highestScore = scores[0];
-for(var i =0;i<=scores.length;i++)
-{
-  
-  console.log(highestScore);
-  
-  var next = scores[i+1];
-  console.log(next);
-  
+for (var i = 0; i <= scores.length; i++) {
 
-if(highestScore < next)
-{
-  highestScore = next;
-  console.log("New high: "+highestScore);
-  
-}
-if(highestScore == next)
-{
-  continue;
-}
-else
-{
-  continue;
-}
+  console.log(highestScore);
+
+  var next = scores[i + 1];
+  console.log(next);
+
+
+  if (highestScore < next) {
+    highestScore = next;
+    console.log("New high: " + highestScore);
+
+  }
+  if (highestScore == next) {
+    continue;
+  } else {
+    continue;
+  }
 
 }
 document.querySelector("#highScore").innerHTML = highestScore;
 
 var highScoreText = "";
-for(var i = 0; i<scores.length; i++)
-{
-  if(scores[i] == highestScore)
-  {
-    highScoreText += "#"+i+"<br>";
+for (var i = 0; i < scores.length; i++) {
+  if (scores[i] == highestScore) {
+    highScoreText += "#" + i + "<br>";
   }
 }
 
 document.querySelector("#highScoreIndex").innerHTML = highScoreText;
+
+
+
+
+document.querySelector("#mathMax").innerHTML = Math.max(60, 50, 60, 58, 54, 54,
+  58, 50, 52, 54, 48, 69,
+  34, 55, 51, 52, 44, 51,
+  69, 64, 66, 55, 52, 61,
+  46, 31, 57, 52, 44, 18,
+  41, 53, 55, 61, 51, 44);
+
+var food_Array = ["Brocolli", "Baked Beans", "Sandwitches"];
+var text1 = "";
+var empty_Array = [];
+var emptyPara = document.querySelector("#empty");
+for (var i = 0; i < food_Array.length; i++) {
+  empty_Array.push(food_Array[i]);
+  text1 += empty_Array[i] + "<br>";
+}
+
+emptyPara.innerHTML = text1;
