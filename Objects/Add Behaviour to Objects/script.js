@@ -24,6 +24,10 @@ var student =
     }
   }
 };
+student.applyJobs();
+student.build();
+student.applyJobs();
+
 
 /*
 var p1 = document.createElement("p");
@@ -35,7 +39,4 @@ text.appendChild(p1);
 text.appendChild(p2);
 text.appendChild(p3);
 */
-student.applyJobs();
-student.build();
-student.applyJobs();
 
